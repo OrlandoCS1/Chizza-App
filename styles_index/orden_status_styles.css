@@ -1,0 +1,71 @@
+.orden_status{
+    margin: 10px;
+    background: linear-gradient(to right, #ff7011, #f64c00);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.orden_status p{
+    color: white;
+}
+
+.title_status{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.subtitle_status{
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.cocinando{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon_container_status{
+    margin-left: 5px;
+    width: 50px;
+    height: 37px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(15, 15, 15, 0.315);
+
+    
+}
+
+.icon_container_status span, i{
+    color: #ff7011;
+}
+
+.icon_container_status i{
+    font-size: 20px;
+    
+}
+
+.check_mark_status{
+    
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+
+/**********/
+
+.lables_check{
+    padding-left: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
