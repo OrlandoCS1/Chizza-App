@@ -3,6 +3,7 @@
     background: linear-gradient(to right, #ff7011, #f64c00);
     border-radius: 10px;
     padding: 20px;
+    box-shadow: 0 3px 10px rgb(165, 165, 165);
 }
 
 .orden_status p{
@@ -29,8 +30,8 @@
 
 .icon_container_status{
     margin-left: 5px;
-    width: 50px;
-    height: 37px;
+    width: 78px;
+    height: 57px;
     background-color: white;
     border-radius: 50%;
     display: flex;
@@ -41,8 +42,9 @@
     
 }
 
-.icon_container_status span, i{
+.icon_container_status span{
     color: #ff7011;
+    font-size: 30px;
 }
 
 .icon_container_status i{
@@ -51,7 +53,8 @@
 }
 
 .check_mark_status{
-    
+    display: flex;
+    text-align: center;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -69,3 +72,57 @@
     align-items: center;
     justify-content: space-between;
 }
+
+#entregado_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    background-color: #e9650d;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.entregando{
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.inProgress_indicator{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.548);
+    margin-right: 20px;
+}
+
+.estimated_time{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    border-top: .5px solid #ff8736;
+    padding-top: 30px;
+}
+
+.entregado_label{
+    color: white;
+    margin-left: 15px;
+
+}
+
+.estimated_time_label{
+    
+    font-size: 13px;
+}
+

@@ -20,11 +20,13 @@
    
     width: 88px;
     height: 20px;
-    border: 1.8px solid #acb2b9;
+    border: 0.5px solid #acb2b985;
 
     border-radius: 15px;
     padding: 10px;
     padding-right: 15px;
+
+    
 }
 
 

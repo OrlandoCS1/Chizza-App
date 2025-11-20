@@ -9,6 +9,7 @@
     background: linear-gradient(to right, #101828, #1d2838);
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 3px 10px rgb(116, 116, 116);
 }
 
 .banner{
@@ -16,6 +17,7 @@
    width: 100%;
    height: 100%;
    display: block;
+   
 }
 
 .menu_bar{
