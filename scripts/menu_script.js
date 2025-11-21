@@ -65,7 +65,7 @@ for(cate of categorias){
     for(item of items){
         //console.log('Entrando al bloque de código');
       if(item.categoria == categorias[counter]){
-            if(limit <= 2){
+            if(limit <= 3){
         
             let producto = document.createElement('div');
                     producto.className = 'card';

@@ -26,6 +26,9 @@
 <link rel="stylesheet" href="/styles_index/styles_menu_principal.css">
 <link rel="stylesheet" href="/styles_index/orden_status_styles.css">
 <link rel="stylesheet" href="/styles_index/styleles_menu_nav.css">
+<link rel="stylesheet" href="/menu/menu_styles.css">
+
+<link rel="stylesheet" href="/profile/profile_styles.css">
 
 <!-- Montserrat y Roboto -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@100..900&display=swap"
@@ -58,7 +61,8 @@
             <p class = "optn_title">Menu</p>
             </div>
 
-            <div class = "option_container">
+            <!------------------
+                <div class = "option_container">
             <i class = "bi bi-envelope-fill" id = "logo_optn"></i>
             <p class = "optn_title">Estatus</p>
             </div>
@@ -67,6 +71,11 @@
                 <i class = "bi bi-plus-square" id = "logo_optn"></i>
                 <p class = "optn_title">Nuevo</p>
             </div>
+            
+            
+            ---------------->
+
+            
         </div>
 
         
@@ -110,7 +119,7 @@
 
         </div>
 
-        <div class = "banner_area">
+        <div class = "banner_area"> 
            <div class = "text">
                 <div>
                     <p class = "text1">Realiza tu primera compra</p>
@@ -286,13 +295,127 @@
 <!---ORDEN-------------------------------------------------------------------------------->
 
 <div class = "profile">
+    <div class = "profile_labels">
+        <p class = "profile_title">Mi perfil</p>
+        <p class = "profile_description">Gestiona tu información y preferencias</p>
+    </div>
+
+    <div class = "user_banner">
+        <img src="/assets/user (1).png" class = "user_photo">
+        <div class = "data">
+            <div class = "data_edit">
+                <div class = "user_data">
+                    <p class = "user_name">Orlando Calderón</p>
+                    <p class = "type_user">Usuario Premium</p>
+                    <div class = "user_contact">
+                        <div class = "email_box">
+                            <i class = "bi bi-envelope-fill" id = "email_profile_icon"></i>
+                            <p class = "email">orlandchizza@email.com</p>
+                        </div>
+                        
+                        <div class = "number_box">
+                            <i class="bi bi-telephone"></i>
+                            <p class = "number">+1 123 456 5674</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class = "edit_profile_button">
+                    Editar perfil
+            </div>
+
+        </div>
+            
+       
+    </div>
+
+    <div class = "user_stats">
+        <div class = "stat_box">
+            <i class="bi bi-bag" id = "bag"></i>
+            <p class = "number_stat">156</p>
+            <p class = "description_stat">Ordenes totales</p>
+        </div>
+
+        <div class = "stat_box">
+            <i class="bi bi-award" id = "award"></i>
+            <p class = "number_stat">156</p>
+            <p class = "description_stat">Puntos de lealtad</p>
+        </div>
+
+        <div class = "stat_box">
+            <i class="bi bi-calendar" id = "calendar"></i>
+            <p class = "number_stat">156</p>
+            <p class = "description_stat">Miembro desde...</p>
+        </div>
+
+        <div class = "stat_box">
+            <i class="bi bi-star" id = "star"></i>
+            <p class = "number_stat">156</p>
+            <p class = "description_stat">Calificacion</p>
+        </div>
+    </div>
+
+    <div class = "user_info_orders">
+        <div class = "user_info">
+            <p class = "label_user">Información Personal</p>
+
+            <div class = "spacer">
+                <p class = "label_user_info">Nombre completo</p>
+            <input type="text" value="Orlando Calderon Solís" class = "input_user_data">
+            </div>
+            
+            <div class = "spacer">
+                <p class = "label_user_info">Dirección de Email</p>
+            <input type="text" value="orlandchizza@email.com" class = "input_user_data">
+
+            </div>
+            
+            <div class = "spacer">
+                <p class = "label_user_info">Número de celular</p>
+                <input type="text" value="+1 123 456 7891" class = "input_user_data">
+            </div>
+
+            <div class = "spacer">
+                <p class = "label_user_info">Dirección Postal</p>
+                <input type="text" value="123 Main Street, New York 10001" class = "input_user_data">
+            </div>
+        </div>
+
+        <div class = "user_payment_info">
+        <img src="/assets/profile/Debit credit card.png" alt="" class = "debit_img">
+    </div>
+    </div>
+
     
+
+</div>
+
+<div class="menu">
+    <div class="side_bar_menu">
+        <div class="menu_selector">
+          <div class="main_menu_tile" data-cat="pizzas"><span class="material-symbols-outlined">local_pizza</span> Pizzas</div>
+
+<div class="main_menu_tile" data-cat="pastas"><span class="material-symbols-outlined">dinner_dining</span> Pastas</div>
+
+<div class="main_menu_tile" data-cat="platillos"><span class="material-symbols-outlined">hand_meal</span> Italiano</div>
+
+<div class="main_menu_tile" data-cat="bebidas"><span class="material-symbols-outlined">local_bar</span> Bebidas</div>
+
+<div class="main_menu_tile" data-cat="postres"><span class="material-symbols-outlined">icecream</span> Postres</div>
+
+        </div>
+    </div>
+
+    <div class="main_menu_view">
+        <p class="label_menu_title">Nuestro Menú</p>
+
+        <div class="main_menu_grid" id="menuGrid"></div>
+    </div>
 </div>
 
 
-<div class = "menu">
-
-</div>
 
 <div class = "estatus">
 
@@ -304,5 +427,8 @@
    <script src="/scripts/nav_script.js"></script>
 
    <script src="/scripts/orden_menu.js"></script>
+
+
+   <script src="menu_selector.js"></script>
 </body>
 </html>
