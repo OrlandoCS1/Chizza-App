@@ -134,7 +134,7 @@ tiles.forEach((selector, index) => {
 
         view.style.display = "flex";
         view.style.flexDirection = "row";
-        view.style.flexWrap = "wrap";
+
         view.style.gap = "1.66%";
 
         let viewsHijas = [...menuView.children].filter((_,i) => i !== index);
